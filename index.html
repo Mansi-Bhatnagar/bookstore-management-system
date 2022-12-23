@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bookstore</title>
+  </head>
+  <body>
+    <section class="login_page">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="images/logo.png" class="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupported"
+            aria-controls="navbarSupported"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupported">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#LoginModal"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/2205_LAMPLIGHTBOOKS-PARNELL_300dpi-059c.webp"
+              class="d-block w-100 img-fluid capimg1"
+            />
+            <div class="carousel-caption d-md-block cap-1">
+              <h5>Books were my pass to personal freedom.</h5>
+              <p>Oprah Winfrey</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/image5.webp"
+              class="d-block w-100 img-fluid capimg2"
+            />
+            <div class="carousel-caption d-md-block cap-2">
+              <h5>
+                If you don’t like to read, you haven’t found the right book.
+              </h5>
+              <p>J.K. Rowling</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/1200px-The_Last_Bookstore_(19270292680).jpg"
+              class="d-block w-100 img-fluid capimg3"
+            />
+            <div class="carousel-caption cap-3">
+              <h5>
+                I have always imagined paradise will be a kind of a library .
+              </h5>
+              <p>~Jorge Luis Borges</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="top-books mt-5 mb-5 text-center">
+        <h2 class="mb-5">Top Books</h2>
+        <div
+          class="books-cards d-flex align-items-center justify-content-center mb-5"
+        >
+          <div class="card ms-2 me-2" style="width: 10rem">
+            <img src="images/It-Starts-With-Us.webp" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">It Starts With Us</h5>
+              <p class="card-text">Colleen Hoover</p>
+            </div>
+          </div>
+          <div class="card ms-2 me-2" style="width: 10rem">
+            <img src="images/the-midnight-library.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Ikigai</h5>
+              <p class="card-text">Francesc Miralles</p>
+            </div>
+          </div>
+          <div class="card ms-2 me-2" style="width: 10rem">
+            <img src="images/angels-amd-demons.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Angels and Demons</h5>
+              <p class="card-text">Dan Brown</p>
+            </div>
+          </div>
+          <div class="card ms-2 me-2" style="width: 10rem">
+            <img src="images/The-kite-runner.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">The Kite Runner</h5>
+              <p class="card-text">Khaled Hosseini</p>
+            </div>
+          </div>
+          <div class="card ms-2 me-2" style="width: 10rem">
+            <img src="images/the-midnight-library.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">The Midnight Library</h5>
+              <p class="card-text">Matt Haig</p>
+            </div>
+          </div>
+          <div class="card ms-2 me-2" style="width: 10rem">
+            <img src="images/Punk-57.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Punk 57</h5>
+              <p class="card-text">Penelope Douglas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="featured-authors text-center mb-5">
+        <h2 class="mb-5">Featured Authors</h2>
+        <div class="authors d-flex align-items-center justify-content-center">
+          <div class="auth">
+            <img class="ms-2 me-1" src="images/collen-hoover.jpg" />
+            <p class="card-title">Colleen Hoover</p>
+          </div>
+          <div class="auth">
+            <img class="ms-2 me-1" src="images/Dan_Brown.jpg" />
+            <p class="card-title">Dan Brown</p>
+          </div>
+          <div class="auth">
+            <img class="ms-2 me-1" src="images/francesc-miralles.jpeg" />
+            <p class="card-title">Francesc Miralles</p>
+          </div>
+          <div class="auth">
+            <img class="ms-2 me-1" src="images/khaled-hosseini.jpg" />
+            <p class="card-title">Khaled Hosseini</p>
+          </div>
+          <div class="auth">
+            <img class="ms-2 me-1" src="images/penelope-douglas.jpg" />
+            <p class="card-title">Penelope Douglas</p>
+          </div>
+          <div class="auth">
+            <img class="ms-2 me-2" src="images/matt-haig.jpg" />
+            <p class="card-title">Matt Haig</p>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="d-flex contact">
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>JUST BOOKS</h2>
+            <p>
+              JustBooks is an online books and magazine rental service. We have
+              over 3 lakh books and 1 lakh happy customers. With just a few easy
+              steps you can become a member and start reading.
+            </p>
+          </div>
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>OUR INFORMATION</h2>
+            <p>Privacy Policy Update</p>
+            <p>Terms and Conditions</p>
+          </div>
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>RESOURCES</h2>
+            <p>FAQ</p>
+            <p>Partner With Us</p>
+            <p>Pricing</p>
+          </div>
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>CONTACT</h2>
+            <p>Customercare@JustBooks.com</p>
+            <p>Call Us: 000-001002003</p>
+          </div>
+        </div>
+        <div class="footer-images d-flex mb-3">
+          <img class="ms-2 me-2" src="images/instagram.svg" />
+          <img class="ms-2 me-2" src="images/facebook.svg" />
+          <img class="ms-2 me-2" src="images/twitter.svg" />
+        </div>
+      </footer>
+
+      <!-- modals -->
+      <div
+        class="modal"
+        id="LoginModal"
+        tabindex="-1"
+        aria-labelledby="LoginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal-content d-flex align-items-center justify-content-around flex-row"
+          >
+            <div
+              class="d-flex align-items-center justify-content-center flex-column"
+            >
+              <div class="modal-heading">
+                <span>Login to</span>
+                <img src="images/logo.png" class="logo" />
+              </div>
+
+              <img
+                src="images/istockphoto-1219250752-612x612.jpg"
+                class="illus"
+              />
+            </div>
+            <div>
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body d-flex flex-column justify-content-center">
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="login_email"
+                />
+                <span class="error">Email can't be empty</span>
+                <span class="error">Invalid email</span>
+                <span class="error">Either email or password is wrong</span>
+                <label>Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  name="login_password"
+                />
+                <span class="error">Password can't be empty</span>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn admin_login">
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="admin_page" style="display: none">
+      <nav class="navbar navbar-expand-lg admin_nav">
+        <div class="container-fluid nav_container">
+          <img src="images/logo.png" class="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="add_book nav-link ms-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#addBookModal"
+            >
+              + Add Book
+          </div>
+            <form role="search">
+              <input
+                class="form-control Search ms-3"
+                type="search"
+                placeholder="🔍 Search"
+                aria-label="Search"
+              />
+            </form>
+            <button type="button" class="btn admin_logout ms-3">Logout</button>
+          </div>
+        </div>
+      </nav>
+      <footer
+        class="d-flex flex-column justify-content-center align-items-center mt-5"
+      >
+        <div class="d-flex contact">
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>JUST BOOKS</h2>
+            <p>
+              JustBooks is an online books and magazine rental service. We have
+              over 3 lakh books and 1 lakh happy customers. With just a few easy
+              steps you can become a member and start reading.
+            </p>
+          </div>
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>OUR INFORMATION</h2>
+            <p>Privacy Policy Update</p>
+            <p>Terms and Conditions</p>
+          </div>
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>RESOURCES</h2>
+            <p>FAQ</p>
+            <p>Partner With Us</p>
+            <p>Pricing</p>
+          </div>
+          <div class="footer-info col-md-3 col-12 mt-4">
+            <h2>CONTACT</h2>
+            <p>Customercare@JustBooks.com</p>
+            <p>Call Us: 000-001002003</p>
+          </div>
+        </div>
+        <div class="footer-images d-flex mb-3">
+          <img class="ms-2 me-2" src="images/instagram.svg" />
+          <img class="ms-2 me-2" src="images/facebook.svg" />
+          <img class="ms-2 me-2" src="images/twitter.svg" />
+        </div>
+      </footer>
+      <div
+        class="modal fade"
+        id="addBookModal"
+        tabindex="-1"
+        aria-labelledby="addBookModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-5" id="addBookModalLabel">
+                ADD NEW BOOK
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="d-flex flex-column" id="addBookForm">
+                <label for="bookname">Book Name</label>
+                <input
+                  type="text"
+                  id="bookname"
+                  placeholder="Enter name of book"
+                  required
+                />
+                <label for="authorname">Author Name</label>
+                <input
+                  type="text"
+                  id="authorname"
+                  placeholder="Enter name of author"
+                  required
+                />
+                <label for="imageurl">Image URL</label>
+                <input
+                  type="text"
+                  id="imageurl"
+                  placeholder="Enter image url"
+                  required
+                />
+                <label for="Genre">Genre</label>
+                <select id="Genre" name="genre">
+                  <option value="select" disabled selected>Select</option>
+                  <option value="MYSTERY">MYSTERY</option>
+                  <option value="ROMANCE">ROMANCE</option>
+                  <option value="FICTION">FICTION</option>
+                  <option value="SELF HELP BOOK">SELF HELP BOOK</option>
+                </select>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn saveBook">Save</button>
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="deleteBookModal"
+        tabindex="-1"
+        aria-labelledby="deleteBookModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                DELETE BOOK
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Do you want ot delete this book?</div>
+            <div class="modal-footer">
+              <button type="button" class="btn yes">Yes</button>
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="modal fade"
+      id="editBookModal"
+      tabindex="-1"
+      aria-labelledby="editBookModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="editBookModalLabel">
+              EDIT BOOK
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex flex-column" id="editBookForm">
+              <label for="newbookname">Book Name</label>
+              <input
+                type="text"
+                id="newbookname"
+                placeholder="Enter name of book"
+                required
+              />
+              <label for="newauthorname">Author Name</label>
+              <input
+                type="text"
+                id="newauthorname"
+                placeholder="Enter name of author"
+                required
+              />
+              <label for="newimageurl">Image URL</label>
+              <input
+                type="text"
+                id="newimageurl"
+                placeholder="Enter image url"
+                required
+              />
+              <label for="newGenre">Genre</label>
+              <select id="newGenre" name="genre">
+                <option value="select" disabled selected>Select</option>
+                <option value="MYSTERY">MYSTERY</option>
+                <option value="ROMANCE">ROMANCE</option>
+                <option value="FICTION">FICTION</option>
+                <option value="SELF HELP BOOK">SELF HELP BOOK</option>
+              </select>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn editBook">Save</button>
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

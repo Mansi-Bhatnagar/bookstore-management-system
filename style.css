@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+/* section1 */
+
+.logo {
+  height: 40px;
+}
+.nav-link {
+  color: #001233 !important;
+  font-weight: 700 !important;
+}
+.nav-link:hover {
+  color: #979dac !important;
+  cursor: pointer;
+}
+.carousel-item img {
+  height: 80vh !important;
+  object-fit: cover !important;
+}
+.capimg1 {
+  opacity: 0.9;
+  filter: contrast(1.2) brightness(80%);
+}
+.cap-1 {
+  color: #fff !important;
+}
+.capimg3 {
+  opacity: 0.65;
+  filter: contrast(2) brightness(60%);
+}
+.cap-3 {
+  text-align: center !important;
+  width: 350px;
+  left: 65% !important;
+  color: #001233 !important;
+}
+.cap-3 h5,
+.cap-2 h5,
+.cap-1 h5 {
+  font-weight: 900 !important;
+  font-size: 3rem !important;
+}
+.cap-3 p,
+.cap-2 p,
+.cap-1 p {
+  font-weight: 900 !important;
+  font-size: 1.5rem !important;
+}
+.top-books h2,
+.featured-authors h2 {
+  color: #001845 !important;
+  font-weight: 700 !important;
+  font-size: 40px;
+}
+.card {
+  outline: none !important;
+  border: 1px solid #fff !important;
+  box-shadow: 0px 5px 14px -2px rgba(161, 155, 161, 0.55) !important;
+  transition: all 0.3s ease;
+}
+.card-img-top {
+  width: 160px !important;
+  height: 220px !important;
+}
+.card-title {
+  font-size: 15px;
+  color: #002855;
+  margin-bottom: 0 !important;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 144px;
+  white-space: nowrap;
+}
+.card-body {
+  padding: 5px 5px !important;
+}
+.card-text {
+  font-size: 10px !important;
+  color: #7d8597;
+  font-weight: 600;
+}
+.card:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.auth img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.auth img:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+footer {
+  background-color: #002855;
+}
+.footer-info h2 {
+  font-size: 16px !important;
+  color: #fff;
+}
+.footer-info p {
+  font-size: 12px;
+  color: #fff;
+}
+.footer-info p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+div.footer-info:first-of-type h2 {
+  font-weight: 900;
+  font-size: 25px !important;
+  padding-left: 20px !important;
+}
+div.footer-info:first-of-type p {
+  padding: 0 20px;
+}
+div.footer-info:first-of-type p:hover {
+  text-decoration: none;
+  cursor: auto;
+}
+.footer-images img {
+  width: 30px;
+  filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(200deg)
+    brightness(104%) contrast(102%);
+}
+.footer-images img:hover {
+  cursor: pointer;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-footer {
+  border-top: none !important;
+}
+.modal-body {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.modal-body label {
+  font-size: 15px;
+  color: #001845 !important;
+  font-weight: 900;
+  margin-top: 8px;
+}
+.modal-body input,
+select {
+  border-radius: 8px;
+  border: 1px solid #7d8597 !important;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+}
+#LoginModal .modal-body input {
+  width: 300px !important;
+}
+.modal-body input::placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  color: #979dac;
+  letter-spacing: 1px;
+}
+.modal-body input:focus {
+  outline: none !important;
+}
+.modal-footer button {
+  background-color: #001845;
+  color: #fff;
+  font-size: 12px;
+  border: 2px solid #001845;
+}
+.modal-footer button:hover {
+  background-color: #fff;
+  color: #001845;
+  font-weight: 900;
+  border: 2px solid #001845;
+}
+#LoginModal .modal-dialog {
+  max-width: max-content !important;
+}
+#LoginModal .modal-heading {
+  position: relative !important;
+  bottom: 30px !important;
+  margin-left: 20px;
+}
+#LoginModal .modal-content {
+  height: 320px;
+}
+.modal-header button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.illus {
+  width: 12rem;
+}
+.modal-heading span {
+  color: #001233;
+  font-size: 25px;
+  font-weight: 900;
+}
+.modal-body input.red {
+  border: 1px solid hsl(0, 100%, 66%) !important;
+}
+.error {
+  color: hsl(0, 100%, 66%);
+  font-size: 8px;
+  padding-top: 5px;
+  display: none;
+}
+.empty,
+.invalid,
+.dismatch {
+  display: block;
+}
+
+/* section2 */
+.admin_page {
+  background-color: #fff;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.Search {
+  padding: 5px 10px !important;
+  width: 100px !important;
+  font-size: 12px !important;
+}
+.Search::placeholder {
+  font-size: 12px;
+  color: #979dac;
+}
+.Search:focus {
+  box-shadow: none !important;
+  border: 1px solid #5c677d !important;
+}
+.admin_img {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+}
+.admin_logout {
+  background-color: #001845 !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  border: 2px solid #001845 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.admin_logout:hover {
+  background-color: #fff !important;
+  color: #001845 !important;
+  font-weight: 900 !important;
+  border: 2px solid #001845 !important;
+}
+p {
+  margin-bottom: 0 !important;
+}
+.card_icons img {
+  width: 15px;
+  opacity: 50%;
+}
+.card_icons img:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+#Genre option {
+  font-size: 12px;
+  color: #001233;
+}
+select {
+  font-size: 12px !important;
+}
+@media (max-width: 1200px) {
+  .books-cards {
+    flex-wrap: wrap;
+  }
+  .card,
+  .authors img {
+    margin-bottom: 15px !important;
+  }
+  .authors {
+    flex-wrap: wrap;
+  }
+  .auth {
+    margin-bottom: 10px;
+  }
+  .contact {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer-images {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1090px) {
+  #navbarSupportedContent .add_book {
+    margin-left: 10px !important;
+  }
+  .add_book,
+  .admin_logout,
+  form {
+    margin-top: 20px !important;
+  }
+  .cap-3 {
+    left: 50% !important;
+  }
+}
+@media (max-width: 768px) {
+  .top-books h2,
+  .featured-authors h2 {
+    font-size: 30px !important;
+  }
+  .auth img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .cap-3 {
+    left: 10% !important;
+    right: 0 !important;
+    width: 300px;
+  }
+  .cap-3 h5,
+  .cap-1 h5,
+  .cap-2 h5 {
+    font-size: 2.5rem !important;
+  }
+  .illus {
+    display: none;
+  }
+  #LoginModal .modal-content {
+    flex-direction: column !important;
+  }
+  #LoginModal .modal-heading {
+    bottom: 0 !important;
+    margin: 0;
+  }
+  #LoginModal .modal-dialog {
+    max-width: initial !important;
+  }
+  #LoginModal .modal-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

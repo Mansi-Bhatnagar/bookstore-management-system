@@ -1,0 +1,86 @@
+[
+  {
+    "title": "It Starts With Us",
+    "author": "Colleen Hoover",
+    "id": "1",
+    "genre": "ROMANCE",
+    "url": "images/It-Starts-With-Us.webp"
+  },
+  {
+    "title": "A Thousand Splendid Suns",
+    "author": "Khaled Hosseini",
+    "id": "2",
+    "genre": "FICTION",
+    "url": "images/a-thousand-splendid-suns.jpg"
+  },
+  {
+    "title": "Inferno",
+    "author": "Dan Brown",
+    "id": "3",
+    "genre": "MYSTERY",
+    "url": "images/inferno.jpg"
+  },
+  {
+    "title": "Ikigai",
+    "author": "Francesc Miralles and Hector",
+    "id": "4",
+    "genre": "SELF HELP BOOK",
+    "url": "images/ikigai.jpg"
+  },
+  {
+    "title": "It Ends With Us",
+    "author": "Colleen Hoover",
+    "id": "5",
+    "genre": "ROMANCE",
+    "url": "images/It-Ends-With-Us.jpg"
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "id": "6",
+    "genre": "FICTION",
+    "url": "images/a-man-called-ove.jpg"
+  },
+  {
+    "title": "48 laws of power",
+    "author": "Robert Greene",
+    "id": "7",
+    "genre": "SELF HELP BOOK",
+    "url": "images/the-48-laws-of-power.jpg"
+  },
+  {
+    "title": "Punk 57",
+    "author": "Penelope Douglas",
+    "id": "8",
+    "genre": "ROMANCE",
+    "url": "images/Punk-57.jpg"
+  },
+  {
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "id": "9",
+    "genre": "FICTION",
+    "url": "images/the-midnight-library.jpg"
+  },
+  {
+    "title": "Seven Husbands of Evelyn Hugo",
+    "author": "Taylor Jenkins Reid",
+    "id": "10",
+    "genre": "ROMANCE",
+    "url": "images/The-seven-husbands-of-evelyn-hugo.jpg"
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "id": "11",
+    "genre": "FICTION",
+    "url": "images/The-kite-runner.jpg"
+  },
+  {
+    "title": "Angels and Demons",
+    "author": "Dan Brown",
+    "id": "12",
+    "genre": "MYSTERY",
+    "url": "images/angels-amd-demons.jpg"
+  }
+]
