@@ -1,7 +1,7 @@
 "use strict";
 import books from "./books.json" assert { type: "json" };
 const admin = {
-  email: "admin@gmail.com",
+  email: "admin@example.com",
   password: "1234",
 };
 const admin_login = document.querySelector(".admin_login");
